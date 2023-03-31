@@ -1,0 +1,21 @@
+.all__num {
+  list-style: none;
+  display: flex;
+  width: 95%;
+  height: 40px;
+  align-items: center;
+  justify-content: flex-end;
+  li {
+    padding: 4px 8px;
+    margin: 5px;
+    color: white;
+    background-color: #008bfb;
+    border-radius: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+  }
+  .page {
+    background-color: #045190;
+    cursor: default;
+  }
+}

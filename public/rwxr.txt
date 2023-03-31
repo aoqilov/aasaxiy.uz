@@ -1,0 +1,4 @@
+kok: #008BFB;
+lightgray:#E6E8EE;
+main back:#F4F7FD;
+textgray:#858997;

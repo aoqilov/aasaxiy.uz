@@ -1,0 +1,226 @@
+@mixin titleh1 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #141821;
+}
+@mixin label {
+  font-size: 14px;
+  line-height: 16px;
+  color: #999a9e;
+  font-weight: 500;
+}
+@mixin forInput {
+  border: 2px solid #c2c6d1;
+  padding: 6px 12px;
+  outline: none;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5f5f5f;
+  font-weight: 500;
+}
+@mixin forSelect {
+  border: 1px solid #ced3de;
+  padding: 6px;
+  outline: none;
+  font-size: 14px;
+  color: #999999;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.xarid {
+  background-color: #eef2f8;
+  h1 {
+    padding: 20px;
+    @include titleh1();
+  }
+
+  .xaridbox {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    justify-content: space-around;
+
+    .xarid__input {
+      width: 73%;
+      background-color: white;
+      border-radius: 20px;
+      margin: 10px 0;
+      box-shadow: 2px 3px 18px gainsboro;
+      form {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        label {
+          width: 45%;
+          height: 40px;
+          margin: 30px 0;
+          display: inline-block;
+          @include label();
+          input {
+            margin: 10px 0;
+            width: 100%;
+            height: 100%;
+            @include forInput();
+          }
+          select {
+            width: 100%;
+            height: 100%;
+            @include forSelect();
+          }
+        }
+      }
+      .jonatsh__turi {
+        width: 93%;
+        margin: 0 auto;
+        h2 {
+          @include titleh1();
+        }
+        .turi__btn {
+          display: flex;
+          gap: 20px;
+          .p {
+            width: 290px;
+            height: 54px;
+            box-shadow: 2px 2px 10px gainsboro;
+            border-radius: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .active {
+            background-color: #008dff;
+            color: white;
+          }
+        }
+      }
+      .adres {
+        width: 93%;
+        margin: 10px auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        label {
+          @include label();
+        }
+        .input {
+          width: 100%;
+          @include forInput();
+          margin: 10px 0;
+        }
+        .promo {
+          padding: 2px;
+          width: 160px;
+          border-radius: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 40px;
+          background-color: #008dff;
+          color: white;
+          cursor: pointer;
+          &.active {
+            background-color: white;
+            color: black;
+            box-shadow: 1px 1px 5px gainsboro;
+          }
+        }
+      }
+      .radio__menu {
+        width: 93%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        p {
+          width: 50%;
+        }
+      }
+      .map {
+        width: 93%;
+        margin: 10px auto;
+      }
+      .agree {
+        p {
+          @include label();
+          margin-left: 25px;
+        }
+        .agree-btn {
+          display: flex;
+          margin: 25px;
+          button {
+            margin: 0 10px;
+            padding: 14px 35px;
+            background-color: #fe7300;
+            border-radius: 15px;
+            color: white;
+            border: none;
+            cursor: pointer;
+          }
+          .nazad {
+            background-color: white;
+            color: black;
+            box-shadow: 1px 1px 5px rgb(162, 160, 160);
+          }
+        }
+      }
+    }
+    .xarid__tovar {
+      width: 23%;
+      height: 225px;
+      background-color: white;
+      box-shadow: 2px 2px 18px gainsboro;
+      border-radius: 20px;
+      margin: 10px 0;
+      .card {
+        width: 95%;
+        margin: 0 auto;
+        text-align: center;
+        .title {
+          @include titleh1();
+          font-size: 16px;
+          padding: 0px;
+        }
+        .cost {
+          position: relative;
+          // top: -20px;
+          font-size: 19px;
+          line-height: 500;
+          color: #af5679;
+          line-height: 20px;
+        }
+        .book__col {
+          gap: 20px;
+          display: flex;
+          justify-content: center;
+          .row-1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 75px;
+            box-shadow: 4px 2px 5px rgb(188, 187, 187);
+            border-radius: 20px;
+            img {
+              width: 60px;
+              height: 60px;
+            }
+          }
+          .row-2 {
+            h3 {
+              font-size: 13px;
+              font-weight: 500;
+              line-height: 20px;
+              color: black;
+              &:hover {
+                color: #008dff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

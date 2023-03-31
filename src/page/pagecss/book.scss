@@ -1,0 +1,21 @@
+.books {
+  background-color: #f4f7fd;
+  width: 100%;
+  min-height: 500px;
+  .double {
+    display: flex;
+    width: 98%;
+    margin: 0 auto 20px auto;
+    gap: 30px;
+    .double__left {
+      width: 23%;
+      height: 500px;
+      background-color: white;
+      box-shadow: 2px 4px 8px gainsboro;
+      border-radius: 25px;
+    }
+    .double__right {
+      width: 75%;
+    }
+  }
+}

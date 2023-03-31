@@ -1,0 +1,27 @@
+.double__left-title {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  color: #858997;
+  text-transform: capitalize;
+  margin-left: 20px;
+}
+.turi {
+  display: flex;
+  width: 95%;
+  height: 40px;
+  margin: 10px auto;
+  padding: 5px;
+  border-bottom: 1px solid gainsboro;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgba(220, 220, 220, 0.297);
+  box-shadow: 1px 1px 5px rgb(182, 182, 182);
+  &:hover {
+    background-color: rgba(220, 220, 220, 0.797);
+    cursor: pointer;
+  }
+  .double__left-text {
+    margin-left: 10px;
+  }
+}

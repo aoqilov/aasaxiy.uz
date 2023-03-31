@@ -1,0 +1,106 @@
+nav {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  height: 80px;
+  // position: relative;
+  border-bottom: 1px solid #e6e8ee;
+  background-color: white;
+
+  .searchbar {
+    width: 50%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    background-color: #008bfb;
+    border-radius: 8px;
+    .input {
+      display: flex;
+      align-items: center;
+      width: 95%;
+      height: 89%;
+      background-color: white;
+      border-bottom-right-radius: 8px;
+      border-radius: 8px;
+      border-top-right-radius: 8px;
+      margin-left: 2px;
+      input {
+        margin-left: 5px;
+        width: 95%;
+        height: 80%;
+        border: none;
+        outline: none;
+      }
+    }
+    .icon-search {
+      color: white;
+      font-weight: bold;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+    button {
+      cursor: pointer;
+
+      width: 15%;
+      height: 100%;
+      background-color: #008bfb;
+      border: none;
+      overflow: hidden;
+      border-bottom-right-radius: 8px;
+      border-top-right-radius: 8px;
+      font-size: 20px;
+      color: white;
+      font-weight: 500;
+      text-transform: capitalize;
+    }
+  }
+  .icons-nav {
+    margin-left: 20px;
+    display: flex;
+    div {
+      height: 45px;
+      margin: 0 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &:nth-child(6) {
+        position: relative;
+        span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          display: inline-block;
+          width: 22px;
+          height: 18px;
+          padding: 1px 3.5px;
+          color: white;
+          font-size: 14px;
+          border-radius: 50%;
+          background-color: #008bfb;
+          position: absolute;
+          top: 0;
+          right: 10px;
+        }
+      }
+      .icon-n {
+        font-size: 30px;
+        color: rgba(0, 0, 0, 0.89);
+      }
+      p {
+        text-align: center;
+        margin-bottom: 10px;
+        color: rgba(0, 0, 0, 0.89);
+        text-transform: capitalize;
+        position: relative;
+        bottom: 20px;
+      }
+      .select {
+        border: none;
+        option {
+          border: none;
+        }
+      }
+    }
+  }
+}

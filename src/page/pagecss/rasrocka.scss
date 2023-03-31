@@ -1,0 +1,168 @@
+.rasrocka {
+  z-index: 5000;
+  overflow-y: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.786);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .card {
+    width: 60%;
+    height: 63vh;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 30px;
+    .card__title {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px;
+      align-items: center;
+      h1 {
+        font-size: 16px;
+        line-height: 24px;
+        color: #212529;
+        font-weight: 500;
+      }
+      p {
+        font-weight: bold;
+        color: white;
+        border-radius: 5px;
+        padding: 2px 8px;
+        background-color: rgba(255, 0, 0, 0.789);
+        cursor: pointer;
+        &:hover {
+          background-color: red;
+        }
+      }
+    }
+    .card__cost {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      .cost {
+        text-align: center;
+        width: 170px;
+        height: 100px;
+        background-color: #008dff;
+        border-radius: 20px;
+        list-style: none;
+        .month {
+          font-size: 16px;
+          line-height: 24px;
+          color: white;
+          font-weight: 400;
+        }
+        .sum {
+          font-size: 16px;
+          line-height: 24px;
+          color: white;
+          font-weight: 400;
+        }
+      }
+      .cost.active {
+        text-align: center;
+        width: 170px;
+        height: 100px;
+        background-color: red;
+        border-radius: 20px;
+        .month {
+          font-size: 16px;
+          line-height: 24px;
+          color: white;
+          font-weight: 400;
+        }
+        .sum {
+          font-size: 16px;
+          line-height: 24px;
+          color: white;
+          font-weight: 400;
+        }
+      }
+    }
+    .card__jami {
+      width: 100%;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h2 {
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 400;
+        color: #212529;
+      }
+      h3 {
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 700;
+        color: #212529;
+      }
+    }
+    .alert {
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 20px;
+      color: #212529;
+      padding-left: 20px;
+    }
+    .card__btn {
+      display: flex;
+      width: 100%;
+      padding: 15px 20px;
+      align-items: center;
+      justify-content: space-between;
+      h3 {
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 400;
+        color: #212529;
+      }
+      .btns {
+        display: flex;
+        gap: 20px;
+        button {
+          display: flex;
+          align-items: center;
+          padding: 14px 20px;
+          font-size: 14px;
+          line-height: 21px;
+          font-weight: 400;
+          border: none;
+          outline: none;
+          color: white;
+          border-radius: 15px;
+          a {
+            text-decoration: none;
+            color: white;
+          }
+          &:hover {
+            box-shadow: 2px 3px 8px rgb(148, 148, 148);
+          }
+          cursor: pointer;
+          .t-icon {
+            color: white;
+            margin-left: 10px;
+          }
+          &:nth-child(1) {
+            background-color: #008dff;
+            &:hover {
+              background-color: #009dff;
+            }
+          }
+          &:nth-child(2) {
+            background-color: #ff7300;
+            &:hover {
+              background-color: #ff8300;
+            }
+          }
+        }
+      }
+    }
+  }
+}
